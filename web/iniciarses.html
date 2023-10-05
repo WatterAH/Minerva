@@ -1,0 +1,41 @@
+<html>
+    <head><title>MINERVA</title>
+        <link rel="icon" type="image/ico" href="IMAGENES/Axolotl.ico"/>
+        <link href="iniciarses.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="iniciarses.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="cuadro" data-aos="flip-right" data-aos-duration="1000">
+            <br>
+            <h1 align="center">INICIAR SESI&Oacute;N</h1>
+            <br>
+            <form method="get" action="iniciarsesion">
+                <div class="texto" align="center">Usuario</div>
+                <br>
+                <div align="center"><input type="text" id="user" name="userA" class="input" required="" pattern="[A-Za-z0-9]{1,15}" title="No me vuelven a poner un marquee" placeholder="Username"/></div>
+                <br>
+                <div class="texto" align="center">Contrase&ntilde;a</div>
+                <br>
+                <div align="center"><input type="password" id="pass" name="pass" class="input" required="" pattern="[A-Za-z0-9]{1,15}" title="No me vuelven a poner un marquee" placeholder="Password"></div>
+                <br>
+                <br>
+                <div align="center">
+                    <button class="cta" type="submit">
+                        <span>Vamos!</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <br><br>	
+            <div align="center" class="texto">No tienes cuenta? <a href="registro.html">Crea una!</a></div>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+body{
+    background: linear-gradient(to right, #FF9494, #9496FF, #94FCFF);
+}
+.class00{
+    font-family: "Verdana";
+    font-size: 20px;
+}
+.class01{
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+}
+#tablatitulos{
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+#titulo{
+    width: 300px;
+    height: 40px;
+    font-family: "Verdana"; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+}
+#welcome{
+    width: 250px;
+    height: 25px;
+    font-family: "Verdana"; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    text-align: center;
+}
+#imgprof{
+    width: 50px;
+    height: 50px;
+}
+#profile{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+}
+
+#tablainfo{
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+#infoMain{
+    width: 580px;
+    height: 900px;
+    position: relative;
+    text-align: center;
+    background: transparent;
+}
+#info1{
+    width: 320px;
+    height: 270px;
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#info2{
+    width: 320px;
+    height: 270px;
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#botonDelete{
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
+}
+#bloques{
+    width: 640px;
+    height: 900px;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999; 
+}
+/*BOTON*/
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #FFFD94;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 10px #999;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #FFC38B;
+    box-shadow: 4px 4px 10px #999;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+/*BOTON*/

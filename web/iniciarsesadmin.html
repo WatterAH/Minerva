@@ -1,0 +1,49 @@
+<html>
+    <head><title>MINERVA</title>
+        <link rel="icon" type="image/ico" href="IMAGENES/Axolotl.ico"/>
+        <link href="iniciarsesadmin.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="iniciarsesadmin.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="cuadro" data-aos="flip-right" data-aos-duration="1000">
+            <br>
+            <h1 align="center">INICIAR SESI&Oacute;N COMO ADMINISTRADOR</h1>
+            <br>
+            <form method="get" action="iniciarsesionadmin" onsubmit="codigoRight(); return false">
+                <div class="texto" align="center">Administrador</div>
+                <br>
+                <div align="center"><input type="text" id="adminA" name="adminA" class="input" required="" placeholder="Admin"/></div>
+                <br>
+                <div class="texto" align="center">C&oacute;digo</div>
+                <br>
+                <div align="center"><input type="password" id="code" name="code" class="input" required="" placeholder="Code"></div>
+                <br>
+                <br>
+                <div id="msg"></div>
+
+                <!-- Mensajes de Verificación -->
+                <div align="center" id="error" class="ocultar" role="alert">
+                    Acceso denegado...
+                </div>
+                <div align="center" id="ok" class="ocultar" role="alert">
+                    ...
+                </div>
+                <br>
+                <div align="center">
+                    <button class="cta" type="submit">
+                        <span>Vamos!</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                        AOS.init();
+        </script>
+    </body>
+</html>

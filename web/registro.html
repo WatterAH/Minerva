@@ -1,0 +1,56 @@
+
+<html>
+    <head><title>MINERVA</title>
+        <link rel="icon" type="image/ico" href="IMAGENES/Axolotl.ico"/>
+        <link href="registro.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="registro.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="cuadro" data-aos="flip-right" data-aos-duration="1000">
+            <br>
+            <h1 align="center">REGISTRARSE</h1>
+            <form method="get" action="registrarusuario" onsubmit="verificarPasswords(); return false" id="form">
+                <div align="center" class="texto">Nuevo nombre de usuario:</div>
+                <br>
+                <div align="center"><input type="text" id="i3" name="userA" class="input" pattern="[A-Za-z0-9]{1,15}" title="Solo se admiten letras y numeros ademas, tu contrase&ntilde;a no debe sobrepasar los 15 caracteres" placeholder="Username..." required=""></div>
+                <br>
+                <div align="center" class="texto">Crea una contrase&ntilde;a:</div>
+                <br>
+                <div align="center"><input type="password" id="i1"  name="pass" class="input" required="" pattern="[A-Za-z0-9]{1,15}" title="Solo se admiten letras y numeros ademas, tu contrase&ntilde;a no debe sobrepasar los 15 caracteres" placeholder="Password"></div>
+                <br>
+                <div align="center" class="texto">Confirma tu contrase&ntildea:</div>
+                <br>
+                <div align="center"><input type="password" id="i2" class="input" required="" pattern="[A-Za-z0-9]{1,15}" title="Solo se admiten letras y numeros ademas, tu contrase&ntilde;a no debe sobrepasar los 15 caracteres" placeholder="Confirm your password"></div>
+                <div id="ver"><button type="button" onclick="ver()" id="verr"><img src="IMAGENES/ver.png" width="30" height="30"></button></div>
+                
+                <br>
+                <div id="msg"></div>
+
+                <!-- Mensajes de Verificación -->
+                <div align="center" id="error" class="ocultar" role="alert">
+                    Las Contrase&ntilde;as no coinciden, vuelve a intentar !
+                </div>
+                <div align="center" id="ok" class="ocultar" role="alert">
+                    Las Contrase&ntilde;as coinciden ! (Procesando formulario ... )
+                </div>
+                <br>
+                <div align="center">
+                    <button class="cta" type="submit">
+                        <span>Vamos!</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
+    </body>
+</html>

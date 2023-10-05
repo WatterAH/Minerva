@@ -1,0 +1,126 @@
+h1{
+    font-family: "Verdana";
+    font-size: 30px;
+}
+body{
+    background-image: url("IMAGENES/fondoIndex.png");
+}
+.texto{
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+}
+#cuadro{
+    width: 490px;
+    height: 470px;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    margin: 0 auto;
+    top: 10%; 
+    align-items: center;
+}
+#ver{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    left: 400px;
+} 
+.ocultar {
+    display: none;
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    color: red;
+}
+.mostrar {
+    display: block;
+}
+/*BOTON*/
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #FFFD94;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 10px #999;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #FFC38B;
+    box-shadow: 4px 4px 10px #999;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+/*BOTON*/
+
+/*INPUT*/
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #FFFFFF;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #FFFFFF;
+}
+
+.input::placeholder {
+    color: #777;
+}
+
+.input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;}
+/*INPUT*/

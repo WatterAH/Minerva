@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Cambiar Nombre de Usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="IMAGENES/Axolotl.ico"/>
+        <link href="cambio.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="cuadro" data-aos="flip-right" data-aos-duration="1000">
+            <form method="get" action="cambiocontra">
+                <div class="texto" align="center">Ingresa tu usuario</div>
+                <br>
+                <div align="center"><input type="text" id="user" name="userA" class="input" required="" placeholder="Username"/></div>
+                <br>
+                <div class="texto" align="center">Ingresa tu antigua contrase&ntilde;a</div>
+                <br>
+                <div align="center"><input type="password" id="pass" name="pass" class="input" required="" placeholder="Password"></div>
+                <br>
+                <div class="texto" align="center">Crea una nueva contrase&ntilde;a</div>
+                <br>
+                <div align="center"><input type="password" id="newPass" name="newPass" class="input" required="" placeholder="Password"></div>
+                <br>
+                <br>
+                <div align="center">
+                    <button class="cta" type="submit">
+                        <span>Cambiar!</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

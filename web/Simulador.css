@@ -1,0 +1,227 @@
+body{
+    background-image: url("IMAGENES/fondoIndex.png");
+    /*background: linear-gradient(to right, #FF9494, #9496FF, #94FCFF);*/
+}
+h1{
+    font-family: "Verdana";
+    font-size: 30px;
+}
+.class01{
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+}
+.class02{
+    font-family: "Verdana";
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+}
+#cuadro{
+    width: 450px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    margin: 0 auto;
+}
+#mision{
+    width: 400px;
+    height: 150px;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#Bck{
+    background-image: url("IMAGENES/fondo.jpg");
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+#linea {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 1130px;
+  padding: 0;
+  position: relative;
+  left: 180px; 
+  top: 248px;
+}
+.text{
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+}
+#text01{
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+}
+#profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(to right, #FEC898, #FE9976);
+    box-shadow: 4px 4px 10px #999;
+    float: right;
+}
+#imgprof{
+    width: 50px;
+    height: 50px;
+}
+/*BOTON*/
+.cta {
+ position: relative;
+ margin: auto;
+ padding: 12px 18px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
+}
+
+.cta:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #FFFD94;
+ width: 45px;
+ height: 45px;
+ transition: all 0.3s ease;
+ box-shadow: 4px 4px 10px #999;
+}
+
+.cta span {
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ color: #234567;
+}
+
+.cta svg {
+ position: relative;
+ top: 0;
+ margin-left: 10px;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #234567;
+ stroke-width: 2;
+ transform: translateX(-5px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+ width: 100%;
+ background: #FFC38B;
+ box-shadow: 4px 4px 10px #999;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active {
+ transform: scale(0.95);
+}
+/*BOTON*/
+
+/*BOTON 2*/
+.button {
+ padding: 1em 2em;
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 15px;
+ font-weight: 700;
+ background: transparent;
+ border: none;
+ letter-spacing: 0.05em;
+ color: #234567;
+ z-index: 1;
+}
+
+.button::after,
+ .button::before {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ z-index: -99999;
+ transition: all .4s;
+}
+
+.button::before {
+ transform: translate(0%, 0%);
+ width: 100%;
+ height: 100%;
+ background: #F9E79F;
+ border-radius: 50px;
+}
+
+.button::after {
+ transform: translate(0px, 0px);
+ width: 10px;
+ height: 10px;
+ background: #FFC38B;
+ backdrop-filter: blur(5px);
+ border-radius: 50px;
+}
+
+.button:hover::before {
+ transform: translate(5%, 20%);
+ width: 10px;
+ height: 10px;
+}
+
+.button:hover::after {
+ border-radius: 50px;
+ transform: translate(0, 0);
+ width: 100%;
+ height: 100%;
+}
+
+.button:active::after {
+ transition: 0s;
+ transform: translate(0, 5%);
+}
+/*BOTON 2*/
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.down{
+    float: bottom;
+}
+.type{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: yellowgreen;
+    position: relative;
+}
+
+.lista .type.seleccionado{
+    transform: scale(1.02) rotate(-1deg);
+    box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
+    cursor: move;
+}
+.lista .type.fantasma{
+    border: 2px dotted;
+}
+
